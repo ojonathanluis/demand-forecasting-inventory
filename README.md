@@ -31,6 +31,7 @@ demand-forecasting-inventory/
 │   └── README.md             # Dataset documentation (Online Retail II - 2009-2011)
 └── docs/
     └── architecture.md       # Pipeline architecture diagram & evolution plan
+```
 
 ---
 
