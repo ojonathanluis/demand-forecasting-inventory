@@ -32,6 +32,8 @@ demand-forecasting-inventory/
 └── docs/
     └── architecture.md       # Pipeline architecture diagram & evolution plan
 
+---
+
 ## 📊 4. Dataset Overview
 
 * **Source:** Online Retail II (UCI Machine Learning Repository / Kaggle mirror).
