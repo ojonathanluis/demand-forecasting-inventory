@@ -36,8 +36,10 @@ demand-forecasting-inventory/
 
 ## 📊 4. Dataset Overview
 
-* **Source:** Online Retail II (UCI Machine Learning Repository / Kaggle mirror).
-* **Scope:** Two years of transactional data (01/12/2009 to 09/12/2011) from a UK-based online retail company.
-* **Granular structure:** Invoice numbers, StockCodes, descriptions, quantities, invoice dates, unit prices, customer IDs, and countries.
+- **Source:** Online Retail II (UCI Machine Learning Repository / Kaggle mirror).
+- **Scope:** Two years of transactional data (01/12/2009 to 09/12/2011) from a UK-based online retail company.
+- **Granular structure:** Invoice numbers, StockCodes, descriptions, quantities, invoice dates, unit prices, customer IDs, and countries.
 
 Project developed as part of a Data Analytics & Engineering portfolio.
+
+---
