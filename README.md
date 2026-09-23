@@ -1,26 +1,23 @@
 # 🛒 E-Commerce Demand & Inventory Intelligence (Online Retail II)
 
-> End-to-end data analytics and inventory optimization pipeline built on historical retail transactions using Advanced SQL, PostgreSQL, Power BI, and AWS.
+> End-to-end data analytics, demand forecasting, and inventory optimization pipeline built on historical retail transactions using Advanced SQL, PostgreSQL, Advanced Excel (Monte Carlo Simulations), Power BI, and AWS.
 
 ---
 
-## 📌 1. Business Problem
-In e-commerce operations, traditional reporting only answers *what happened*. Supply chain and inventory managers need to answer:
-1. *What is the underlying demand trend, independent of returns and cancellations?*
-2. *Which customer segments drive core revenue (RFM Analysis)?*
-3. *How can we structure analytical queries and database models to support inventory decisions?*
+## 📌 1. Business Problem & Objectives
+In e-commerce and retail operations, traditional reporting only answers what happened. Supply chain and inventory managers need answers for forward-looking decisions:
+1. **Demand Trend & Seasonality:** What is the underlying product demand over time, independent of returns and cancellations?
+2. **Demand Forecasting & Incerteza:** How can we project future sales trends and simulate demand variability using **Monte Carlo simulations in Advanced Excel**?
+3. **Inventory Intelligence:** When and how much should we reorder? (Calculating **Safety Stock** and **Reorder Points** under uncertainty to prevent stockouts without holding excess inventory).
+4. **Customer Segmentation:** Which customer segments drive core revenue? (RFM Analysis).
 
-This project tackles these challenges by transforming raw transactional data into an analytical PostgreSQL model, structured SQL queries, and executive dashboards.
+This project tackles these challenges by transforming raw transactional data into an analytical PostgreSQL model, structured SQL queries, Excel-based stochastic forecasting models, and executive dashboards.
 
 ---
 
 ## 🏗️ Architecture & Evolution
 The project is structured in two architectural phases:
-- **Phase 1 (MVP / Local):** Excel Validation $
-ightarrow$ PostgreSQL $
-ightarrow$ Advanced SQL Analytics $
-ightarrow$ Power BI $
-ightarrow$ n8n.
+- **Phase 1 (MVP / Local):** Data Validation -> PostgreSQL Storage -> Advanced SQL Analytics -> **Excel (Monte Carlo Demand Simulation & Inventory Logic)** -> Power BI -> n8n Automation.
 - **Phase 2 (Cloud Scale):** Migration to AWS Data Lake (S3) and Amazon Athena serverless queries.
 
 ---
@@ -32,7 +29,8 @@ demand-forecasting-inventory/
 ├── README.md                 # Project Overview & Case Study
 ├── data/                     # Dataset documentation (Online Retail II)
 ├── docs/                     # Architecture diagram & data quality rules
-└── sql/                      # Analytical queries, data cleaning & RFM logic
+├── sql/                      # Analytical queries, cleaning, RFM & aggregation logic
+└── excel/                    # Demand forecasting models & Monte Carlo simulations
 ```
 
 ---
@@ -44,4 +42,3 @@ demand-forecasting-inventory/
 
 ---
 *Project developed as part of a Data Analytics & Engineering portfolio.*
-
